@@ -32,5 +32,5 @@ python examples/gymnasium/torch_gymnasium_cartpole_dqn.py
 
 ## Clone  
 ```bash
-git clone --recurse-submodules https://github.com/mxochicale/reinforcement-learning-examples-in-unified-ai.git
+git clone --recurse-submodules https://github.com/mxochicale/rle-in-uai.git
 ```
