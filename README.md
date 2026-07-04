@@ -11,13 +11,26 @@ To update the germinal submodule to its latest remote commit (optional):
 git submodule update --remote skrl
 ```
 
+If the submodule directory exists but is empty, run
+```bash
+git submodule update --init --recursive
 ```
+
+Install skrl
+```bash
 cd skrl
 pip install -e .[torch]
+pip install "gymnasium[classic-control]"
+```
+
+Example
+```bash
+python examples/gymnasium/torch_gymnasium_cartpole_cem.py
+python examples/gymnasium/torch_gymnasium_cartpole_dqn.py
 ```
 
 
-## Clone 
+## Clone  
 ```bash
-git clone https://github.com/mxochicale/reinforcement-learning-examples-in-unified-ai.git
+git clone --recurse-submodules https://github.com/mxochicale/reinforcement-learning-examples-in-unified-ai.git
 ```
